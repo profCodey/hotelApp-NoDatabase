@@ -1,13 +1,14 @@
 var express = require("express");
 var app = express.Router();
+
 const rooms = require("../roomsModel");
 console.log("heloooo", rooms);
 
-app.get("/", (req, res) => {
-  return res.status(200).json(rooms);
-});
+// app.get("/", (req, res) => {
+//   return res.status(200).json(rooms);
+// });
 
-app.get("/all", (req, res) => {
+app.get("/", (req, res) => {
   return res.status(200).json(rooms);
 });
 

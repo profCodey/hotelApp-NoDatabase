@@ -8,7 +8,7 @@ const userRouter = require("./routes/userRouter.js");
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
-app.use("/room", roomRouter);
+app.use("", roomRouter);
 app.use("/user", userRouter);
 
 const port = 8080;
